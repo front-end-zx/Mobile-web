@@ -1,0 +1,70 @@
+/*=================reset css===================*/
+
+*,
+*::after,
+*::before {
+	margin: 0px;
+	padding: 0px;
+	/*移动端浏览器一般为webkit内核，并且是百分比布局*/
+	/*防止内容溢出*/
+	box-sizing: border-box; 
+	-webkit-box-sizing:border-box;
+	/*点击高亮效果的清除*/
+	tap-highlight-color:transparent;
+	-webkit-tap-highlight-color:transparent;
+}
+body {
+	font-size: 14px;
+	font-family: 'Microsoft Yahei','sans-serif';
+	color: #333;
+}
+ul,ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #333;
+}
+input, textarea {
+	border: none;
+	outline: none;
+	/*禁止缩放*/
+	resize: none;
+	/*去除元素的外观*/
+	-webkit-appearance: none;
+}
+
+/*===============common css====================*/
+
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.clearfix::before,
+.clearfix::after {
+	content: '';
+	display: block;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+	clear: both;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.mr10 {
+	margin-right: 10px;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.mb10 {
+	margin-bottom: 10px;
+}
+[class^="icon_"],[class*=" icon_"] {
+	background: url('../images/sprites.png');
+	background-repeat: no-repeat;
+	background-size: 200px 200px;
+}
